@@ -2,19 +2,16 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Ayudante {
+public class Ayudante extends Estudiante{
     protected Estudiante est;
     public ArrayList<Paralelo> paralelos;
 
-    Ayudante(Estudiante e){
-    	est = e;
+    public Ayudante(String nombre, String apellido, String matricula){
+    	super(nombre,apellido,matricula);
     }
+    
     public String getMatricula() {
         return est.getMatricula();
-    }
-
-    public void setMatricula(String matricula) {
-        est.setMatricula(matricula);
     }
 
     //Getters y setters se delegan en objeto estudiante para no duplicar código
