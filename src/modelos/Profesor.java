@@ -11,6 +11,9 @@ public class Profesor {
     public String telefono;
     public InformacionAdicionalProfesor info;
     public ArrayList<Paralelo> paralelos;
+    private int añosdeTrabajo;
+    private String facultad;
+    private double BonoFijo;
 
     public Profesor(String codigo, String nombre, String apellido, String facultad, int edad, String direccion, String telefono) {
         this.codigo = codigo;
