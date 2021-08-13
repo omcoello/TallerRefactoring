@@ -9,19 +9,6 @@ public class Ayudante extends Estudiante{
     public Ayudante(String nombre, String apellido, String matricula){
     	super(nombre,apellido,matricula);
     }
-    
-    public String getMatricula() {
-        return est.getMatricula();
-    }
-
-    //Getters y setters se delegan en objeto estudiante para no duplicar código
-    public String getNombre() {
-        return est.getNombre();
-    }
-
-    public String getApellido() {
-        return est.getApellido();
-    }
 
     //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos
 

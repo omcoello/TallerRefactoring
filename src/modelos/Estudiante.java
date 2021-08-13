@@ -99,7 +99,7 @@ public class Estudiante {
     public double CalcularNotaTotal(Paralelo p) {        
         for (Paralelo par : paralelos) {
             if (p.equals(par)) {
-                return (p.getMateria().notaInicial + p.getMateria().notaFinal) / 2;
+                return (p.getMateria().getNotaInicial() + p.getMateria().getNotaFinal()) / 2;
             }
         }
         return 0;
